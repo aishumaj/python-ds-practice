@@ -11,10 +11,10 @@ def number_compare(a, b):
         'First is greater'
     """
 
-    if a>b:
+    if a > b:
         return "First is greater"
-    elif b>a:
+    elif b > a:
         return "Second is greater"
-    elif b==a:
+    else:
         return "Numbers are equal"
     # originally just had else with no condition, got error: -1 and 1 are equal

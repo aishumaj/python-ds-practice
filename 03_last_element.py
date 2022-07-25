@@ -8,3 +8,4 @@ def last_element(lst):
         True
     """
     return lst[-1] if len(lst)>0 else None
+    # if lst: return lst[-1]

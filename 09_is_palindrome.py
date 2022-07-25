@@ -24,5 +24,6 @@ def is_palindrome(phrase):
 
     return phrase.replace(" ","").lower() == phrase.replace(" ","").lower()[::-1]
 
+    #Store repeated terms in variables
 
 

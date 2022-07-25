@@ -10,8 +10,8 @@ def multiple_letter_count(phrase):
     dict_of_letters ={}
 
     for letter in phrase:
-        dict_of_letters[letter] = phrase.count(letter)
-
+        dict_of_letters[letter] = phrase.count(letter) # O(n^2)
+    #do the js way is better 
     return dict_of_letters
 
 

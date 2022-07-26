@@ -24,3 +24,5 @@ def partition(lst, fn):
     b = [elem for elem in lst if not fn(elem)]
 
     return [a,b]
+
+    #TC not optimal in this case

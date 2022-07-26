@@ -11,3 +11,17 @@ def mode(nums):
         >>> mode([2, 2, 3, 3, 2])
         2
     """
+
+    dict_of_nums = {}
+
+    for num in nums:
+        if num in dict_of_nums:
+            dict_of_nums[num] = dict_of_nums[num] + 1
+        else:
+            dict_of_nums[num] = 1
+
+    max_count = max(dict_of_nums.values())
+
+    max_value = [key for key in dict_of_nums if dict_of_nums[key]==max_count]
+
+    return max_value[0]

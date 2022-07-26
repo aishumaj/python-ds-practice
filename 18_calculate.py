@@ -29,6 +29,20 @@ def calculate(operation, a, b, make_int=False, message='The result is'):
         ValueError: Invalid Operation
     """
     VALID_OPERATIONS = ("add", "subtract", "multiply", "divide")
-
+    result = None
     if operation not in VALID_OPERATIONS:
-        raise ValueError("")
+        raise ValueError("Invalid Operation")
+    elif operation == "add":
+        result = a + b
+    elif operation == "subtract":
+        result = a - b
+    elif operation == "multiply":
+        result = a * b
+    else:
+        result = a/b
+
+    if make_int:
+        result = int(result)
+
+    return f"{message} {result}"
+
